@@ -1,35 +1,390 @@
+
 <!doctype html>
 <html lang="id">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101114">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101114">
 <meta name="description" content="UNITRA — katalog mobil bekas pilihan. Cek stok, harga, dan konsultasi unit melalui WhatsApp.">
 <title>UNITRA — Temukan Unit. Gas Transaksi.</title>
+
 <style>
-:root{--bg:#0d0e10;--panel:#15171b;--line:#2b2e35;--text:#f6f7f8;--muted:#a7abb4;--orange:#ff7628;--green:#25d366}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(1120px,92%);margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#0d0e10ef;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:2px;font-size:20px}.mark{width:38px;height:38px;border-radius:11px;background:var(--orange);display:grid;place-items:center;color:#111;font-size:23px;font-weight:1000}.navlinks{display:flex;align-items:center;gap:22px;color:#d0d2d7;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border:0;border-radius:10px;background:var(--orange);color:#15110e;font-weight:850;cursor:pointer;transition:.18s}.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}.btn.secondary{background:#23262c;color:white;border:1px solid var(--line)}.btn.small{padding:9px 12px;font-size:13px}.hero{padding:60px 0 38px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;right:-180px;top:-220px;width:560px;height:560px;background:radial-gradient(circle,#ff762825,transparent 68%);pointer-events:none}.eyebrow,.kicker{color:#ffb184;font-size:11px;letter-spacing:2px;font-weight:900;text-transform:uppercase}.eyebrow{display:inline-flex;align-items:center;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 12px var(--orange)}h1{font-size:clamp(38px,6.6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin:18px 0;max-width:760px}h1 span{color:var(--orange)}.hero p{color:var(--muted);font-size:17px;max-width:600px;margin:0 0 25px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.stats{display:flex;gap:32px;margin-top:38px;flex-wrap:wrap}.stat strong{display:block;font-size:22px}.stat span{font-size:12px;color:var(--muted)}.hero-visual{margin-top:30px;border:1px solid #ffffff14;border-radius:22px;min-height:150px;background:linear-gradient(110deg,#1b1d21,#101114 62%,#322015);position:relative;padding:26px;display:flex;align-items:end;overflow:hidden}.hero-visual:after{content:"UNITRA";position:absolute;right:2%;top:-26px;font-size:clamp(60px,16vw,180px);font-weight:1000;letter-spacing:-8px;color:#ffffff07}.visual-copy{position:relative;z-index:1}.visual-copy strong{font-size:clamp(20px,3vw,30px);display:block}.visual-copy span{color:var(--muted);font-size:13px}.section{padding:40px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}.section h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;margin:5px 0 0}.sub{color:var(--muted);margin:6px 0 0}.filters{display:grid;grid-template-columns:1fr 190px 170px;gap:10px;margin-bottom:22px}.field{width:100%;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:12px 13px;color:var(--text);outline:none}.field:focus{border-color:var(--orange)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden;transition:.2s;min-width:0}.card:hover{transform:translateY(-3px);border-color:#555963}.car-image{height:190px;position:relative;display:grid;place-items:center;background:linear-gradient(135deg,#292c32,#141519);overflow:hidden}.car-image:before{content:"";position:absolute;width:76%;height:45%;bottom:26px;left:12%;border-radius:55% 35% 18% 18%;background:linear-gradient(160deg,#777d85,#30343b 60%,#17191d);border:2px solid #ffffff22;transform:skewX(-9deg);box-shadow:0 18px 20px #0008}.car-image:after{content:"";position:absolute;width:34%;height:22%;bottom:74px;left:33%;background:linear-gradient(135deg,#8997a2,#343a43);clip-path:polygon(15% 100%,30% 0,76% 0,100% 100%)}.car-image.truck:before{width:78%;height:40%;left:11%;bottom:28px;border-radius:7px 8px 10px 10px;background:linear-gradient(160deg,#bfc2c5,#666b72 60%,#2c3035)}.car-image.truck:after{width:24%;height:35%;left:18%;bottom:65px;clip-path:polygon(0 0,80% 0,100% 100%,0 100%);background:linear-gradient(135deg,#c6d1d9,#525e68)}.wheel{position:absolute;z-index:2;bottom:14px;left:23%;width:36px;height:36px;border:8px solid #111;border-radius:50%;background:#727780}.wheel.w2{left:auto;right:20%}.badge{position:absolute;z-index:4;top:12px;left:12px;border-radius:6px;padding:5px 8px;font-size:10px;letter-spacing:.5px;font-weight:900;background:#173a2a;color:#7df0a9}.badge.sold{background:#482323;color:#ffb2b2}.photo-note{position:absolute;z-index:3;bottom:8px;right:10px;font-size:9px;letter-spacing:1.1px;color:#ffffffa0}.card-body{padding:17px}.card-type{color:var(--orange);font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}.card h3{margin:5px 0;font-size:18px;line-height:1.25}.meta{color:var(--muted);font-size:12px;margin:8px 0 13px}.price{font-size:22px;font-weight:900;letter-spacing:-.5px}.price small{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:0}.card-actions{display:flex;gap:8px;margin-top:16px}.card-actions .btn{flex:1;padding:10px 8px;font-size:12px}.empty{grid-column:1/-1;text-align:center;padding:45px 15px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}.banner{border:1px solid #ffffff15;border-radius:18px;background:linear-gradient(115deg,#21170f,#151619 65%);padding:27px;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h2{margin:0 0 6px;font-size:25px}.banner p{color:var(--muted);margin:0}.footer{border-top:1px solid var(--line);padding:26px 0 36px;color:var(--muted);font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.wa-float{position:fixed;bottom:18px;right:18px;z-index:30;border-radius:99px;background:var(--green);color:#062a14;font-weight:900;padding:13px 17px;box-shadow:0 8px 30px #0008}.modal{position:fixed;inset:0;z-index:50;background:#000b;display:none;align-items:center;justify-content:center;padding:16px}.modal.open{display:flex}.modal-box{width:min(620px,100%);max-height:90vh;overflow:auto;background:#17191e;border:1px solid var(--line);border-radius:18px;padding:23px;position:relative}.close{position:absolute;right:14px;top:14px;border:1px solid var(--line);background:#22252b;color:white;border-radius:9px;padding:7px 11px;cursor:pointer}.detail-art{height:170px;border-radius:12px;margin:10px 0 20px}.detail-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin:18px 0}.spec{padding:11px;border-radius:9px;background:#22252a}.spec span{display:block;font-size:11px;color:var(--muted)}.spec strong{font-size:14px}.notice{color:#b9bdc5;font-size:12px;margin-top:20px;line-height:1.6}
-@media(max-width:780px){.navlinks{gap:12px}.navlinks a:not(.btn){display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.car-image{height:155px}.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.hero{padding-top:46px}}
-@media(max-width:520px){.nav{height:62px}.brand{font-size:18px}.nav .btn{padding:9px 11px;font-size:12px}.grid{grid-template-columns:1fr 1fr;gap:10px}.card-body{padding:12px}.car-image{height:128px}.card h3{font-size:15px}.price{font-size:18px}.meta{font-size:11px}.card-actions{flex-direction:column}.card-actions .btn{width:100%}.hero p{font-size:15px}.stats{gap:22px}.stat strong{font-size:19px}.banner{align-items:flex-start;flex-direction:column}.section{padding:30px 0}.section-head{align-items:flex-start;flex-direction:column}.detail-specs{grid-template-columns:1fr 1fr}}
-</style></head>
+:root{--bg:#0d0e10;--panel:#15171b;--line:#2b2e35;--text:#f6f7f8;--muted:#a7abb4;--orange:#ff7628;--green:#25d366}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+.topbar{position:sticky;top:0;z-index:20;background:#0d0e10ef;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff12}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:2px;font-size:20px}
+.mark{width:38px;height:38px;border-radius:11px;background:var(--orange);display:grid;place-items:center;color:#111;font-size:23px;font-weight:1000}
+.navlinks{display:flex;align-items:center;gap:22px;color:#d0d2d7;font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border:0;border-radius:10px;background:var(--orange);color:#15110e;font-weight:850;cursor:pointer;transition:.18s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.secondary{background:#23262c;color:white;border:1px solid var(--line)}
+.btn.small{padding:9px 12px;font-size:13px}
+.hero{padding:60px 0 38px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-180px;top:-220px;width:560px;height:560px;background:radial-gradient(circle,#ff762825,transparent 68%);pointer-events:none}
+.eyebrow,.kicker{color:#ffb184;font-size:11px;letter-spacing:2px;font-weight:900;text-transform:uppercase}
+.eyebrow{display:inline-flex;align-items:center;gap:8px}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--orange);box-shadow:0 0 12px var(--orange)}
+h1{font-size:clamp(38px,6.6vw,72px);line-height:1.02;letter-spacing:-2.5px;margin:18px 0;max-width:760px}
+h1 span{color:var(--orange)}
+.hero p{color:var(--muted);font-size:17px;max-width:600px;margin:0 0 25px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:32px;margin-top:38px;flex-wrap:wrap}
+.stat strong{display:block;font-size:22px}
+.stat span{font-size:12px;color:var(--muted)}
+.hero-visual{margin-top:30px;border:1px solid #ffffff14;border-radius:22px;min-height:150px;background:linear-gradient(110deg,#1b1d21,#101114 62%,#322015);position:relative;padding:26px;display:flex;align-items:end;overflow:hidden}
+.hero-visual:after{content:"UNITRA";position:absolute;right:2%;top:-26px;font-size:clamp(60px,16vw,180px);font-weight:1000;letter-spacing:-8px;color:#ffffff07}
+.visual-copy{position:relative;z-index:1}
+.visual-copy strong{font-size:clamp(20px,3vw,30px);display:block}
+.visual-copy span{color:var(--muted);font-size:13px}
+.section{padding:40px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}
+.section h2{font-size:clamp(26px,4vw,38px);letter-spacing:-1px;margin:5px 0 0}
+.sub{color:var(--muted);margin:6px 0 0}
+.filters{display:grid;grid-template-columns:1fr 190px 170px;gap:10px;margin-bottom:22px}
+.field{width:100%;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:12px 13px;color:var(--text);outline:none}
+.field:focus{border-color:var(--orange)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:16px;overflow:hidden;transition:.2s;min-width:0}
+.card:hover{transform:translateY(-3px);border-color:#555963}
+
+/* AREA FOTO UNIT */
+.car-image{height:190px;position:relative;display:grid;place-items:center;background:linear-gradient(135deg,#292c32,#141519);overflow:hidden}
+
+/* Ilustrasi dummy hanya muncul jika tidak ada foto asli */
+.car-image:before{content:"";position:absolute;width:76%;height:45%;bottom:26px;left:12%;border-radius:55% 35% 18% 18%;background:linear-gradient(160deg,#777d85,#30343b 60%,#17191d);border:2px solid #ffffff22;transform:skewX(-9deg);box-shadow:0 18px 20px #0008}
+.car-image:after{content:"";position:absolute;width:34%;height:22%;bottom:74px;left:33%;background:linear-gradient(135deg,#8997a2,#343a43);clip-path:polygon(15% 100%,30% 0,76% 0,100% 100%)}
+.car-image.truck:before{width:78%;height:40%;left:11%;bottom:28px;border-radius:7px 8px 10px 10px;background:linear-gradient(160deg,#bfc2c5,#666b72 60%,#2c3035)}
+.car-image.truck:after{width:24%;height:35%;left:18%;bottom:65px;clip-path:polygon(0 0,80% 0,100% 100%,0 100%);background:linear-gradient(135deg,#c6d1d9,#525e68)}
+.wheel{position:absolute;z-index:2;bottom:14px;left:23%;width:36px;height:36px;border:8px solid #111;border-radius:50%;background:#727780}
+.wheel.w2{left:auto;right:20%}
+
+/* KUNCI: foto asli aktif = semua elemen ilustrasi disembunyikan */
+.car-image.has-photo:before,
+.car-image.has-photo:after,
+.car-image.has-photo .wheel,
+.car-image.has-photo .photo-note{display:none!important}
+
+/* Foto asli mengisi area gambar */
+.car-image.has-photo{background-repeat:no-repeat;background-size:cover;background-position:center}
+
+.badge{position:absolute;z-index:4;top:12px;left:12px;border-radius:6px;padding:5px 8px;font-size:10px;letter-spacing:.5px;font-weight:900;background:#173a2a;color:#7df0a9}
+.badge.sold{background:#482323;color:#ffb2b2}
+.photo-note{position:absolute;z-index:3;bottom:8px;right:10px;font-size:9px;letter-spacing:1.1px;color:#ffffffa0}
+.card-body{padding:17px}
+.card-type{color:var(--orange);font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
+.card h3{margin:5px 0;font-size:18px;line-height:1.25}
+.meta{color:var(--muted);font-size:12px;margin:8px 0 13px}
+.price{font-size:22px;font-weight:900;letter-spacing:-.5px}
+.price small{font-size:11px;font-weight:500;color:var(--muted);letter-spacing:0}
+.card-actions{display:flex;gap:8px;margin-top:16px}
+.card-actions .btn{flex:1;padding:10px 8px;font-size:12px}
+.empty{grid-column:1/-1;text-align:center;padding:45px 15px;border:1px dashed var(--line);border-radius:14px;color:var(--muted)}
+.banner{border:1px solid #ffffff15;border-radius:18px;background:linear-gradient(115deg,#21170f,#151619 65%);padding:27px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.banner h2{margin:0 0 6px;font-size:25px}
+.banner p{color:var(--muted);margin:0}
+.footer{border-top:1px solid var(--line);padding:26px 0 36px;color:var(--muted);font-size:12px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.wa-float{position:fixed;bottom:18px;right:18px;z-index:30;border-radius:99px;background:var(--green);color:#062a14;font-weight:900;padding:13px 17px;box-shadow:0 8px 30px #0008}
+.modal{position:fixed;inset:0;z-index:50;background:#000b;display:none;align-items:center;justify-content:center;padding:16px}
+.modal.open{display:flex}
+.modal-box{width:min(620px,100%);max-height:90vh;overflow:auto;background:#17191e;border:1px solid var(--line);border-radius:18px;padding:23px;position:relative}
+.close{position:absolute;right:14px;top:14px;border:1px solid var(--line);background:#22252b;color:white;border-radius:9px;padding:7px 11px;cursor:pointer}
+.detail-art{height:170px;border-radius:12px;margin:10px 0 20px}
+.detail-specs{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin:18px 0}
+.spec{padding:11px;border-radius:9px;background:#22252a}
+.spec span{display:block;font-size:11px;color:var(--muted)}
+.spec strong{font-size:14px}
+.notice{color:#b9bdc5;font-size:12px;margin-top:20px;line-height:1.6}
+
+@media(max-width:780px){
+.navlinks{gap:12px}
+.navlinks a:not(.btn){display:none}
+.grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.car-image{height:155px}
+.filters{grid-template-columns:1fr 1fr}
+.filters input{grid-column:1/-1}
+.hero{padding-top:46px}
+}
+@media(max-width:520px){
+.nav{height:62px}
+.brand{font-size:18px}
+.nav .btn{padding:9px 11px;font-size:12px}
+.grid{grid-template-columns:1fr 1fr;gap:10px}
+.card-body{padding:12px}
+.car-image{height:128px}
+.card h3{font-size:15px}
+.price{font-size:18px}
+.meta{font-size:11px}
+.card-actions{flex-direction:column}
+.card-actions .btn{width:100%}
+.hero p{font-size:15px}
+.stats{gap:22px}
+.stat strong{font-size:19px}
+.banner{align-items:flex-start;flex-direction:column}
+.section{padding:30px 0}
+.section-head{align-items:flex-start;flex-direction:column}
+.detail-specs{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+
 <body>
-<header class="topbar"><div class="wrap nav"><a class="brand" href="#"><span class="mark">U</span><span>UNITRA</span></a><nav class="navlinks"><a href="#katalog">Katalog Unit</a><a href="#tentang">Tentang</a><a class="btn small" id="navWa" href="#">WhatsApp ↗</a></nav></div></header>
-<main><section class="hero wrap"><div class="eyebrow"><span class="dot"></span> USED VEHICLE MARKETPLACE</div><h1>Temukan Unit.<br><span>Gas Transaksi.</span></h1><p>Temukan mobil bekas untuk usaha, keluarga, dan kebutuhan bisnis. Cek pilihan unit, lihat harga, lalu konsultasi langsung dengan UNITRA.</p><div class="hero-actions"><a class="btn" href="#katalog">Jelajahi Unit ↓</a><a class="btn secondary" id="heroWa" href="#">Tanya via WhatsApp ↗</a></div><div class="stats"><div class="stat"><strong id="statTotal">02</strong><span>Unit di katalog</span></div><div class="stat"><strong>Bandung</strong><span>Area layanan utama</span></div><div class="stat"><strong>Langsung</strong><span>Konsultasi unit</span></div></div><div class="hero-visual"><div class="visual-copy"><strong>Unit pilihan, info lebih jelas.</strong><span>Harga • Spesifikasi • Status stok dalam satu tempat.</span></div></div></section>
-<section class="section wrap" id="katalog"><div class="section-head"><div><div class="kicker">PILIHAN UNIT</div><h2>Katalog Mobil</h2><p class="sub">Cari unit yang cocok buat kebutuhan lu.</p></div><span class="sub" id="resultCount">2 unit</span></div><div class="filters"><input id="search" class="field" type="search" placeholder="Cari nama mobil, tahun, tipe..." aria-label="Cari unit"><select id="category" class="field" aria-label="Filter kategori"><option value="all">Semua kategori</option><option value="Truk">Truk</option><option value="Minibus">Minibus</option><option value="Mobil">Mobil lainnya</option></select><select id="status" class="field" aria-label="Filter status"><option value="all">Semua status</option><option value="Tersedia">Tersedia</option><option value="Terjual">Terjual</option></select></div><div class="grid" id="catalog"></div><p class="notice">Harga dan status dapat berubah. Konfirmasi ketersediaan, dokumen, pajak/KIR, serta kondisi kendaraan sebelum transaksi.</p></section>
-<section class="section wrap" id="tentang"><div class="banner"><div><h2>Lagi cari unit tertentu?</h2><p>Kasih tahu kebutuhan dan anggaran lu. Kita bantu cek pilihan yang sesuai.</p></div><a class="btn" id="bannerWa" href="#">Konsultasi WhatsApp ↗</a></div></section></main>
-<footer class="footer"><div class="wrap footer-inner"><div><strong style="color:white;letter-spacing:2px">UNITRA</strong><br>Temukan Unit. Gas Transaksi.</div><div>© <span id="year"></span> UNITRA · Katalog mobil bekas<br>Bandung dan sekitarnya</div></div></footer><a class="wa-float" id="floatWa" href="#" aria-label="Hubungi UNITRA melalui WhatsApp">☏ WhatsApp</a>
-<div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><div class="modal-box"><button class="close" id="closeModal" aria-label="Tutup detail">Tutup ✕</button><div id="detailContent"></div></div></div>
+<header class="topbar">
+<div class="wrap nav">
+<a class="brand" href="#"><span class="mark">U</span><span>UNITRA</span></a>
+<nav class="navlinks">
+<a href="#katalog">Katalog Unit</a>
+<a href="#tentang">Tentang</a>
+<a class="btn small" id="navWa" href="#">WhatsApp ↗</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero wrap">
+<div class="eyebrow"><span class="dot"></span> USED VEHICLE MARKETPLACE</div>
+<h1>Temukan Unit.<br><span>Gas Transaksi.</span></h1>
+<p>Temukan mobil bekas untuk usaha, keluarga, dan kebutuhan bisnis. Cek pilihan unit, lihat harga, lalu konsultasi langsung dengan UNITRA.</p>
+<div class="hero-actions">
+<a class="btn" href="#katalog">Jelajahi Unit ↓</a>
+<a class="btn secondary" id="heroWa" href="#">Tanya via WhatsApp ↗</a>
+</div>
+<div class="stats">
+<div class="stat"><strong id="statTotal">02</strong><span>Unit di katalog</span></div>
+<div class="stat"><strong>Bandung</strong><span>Area layanan utama</span></div>
+<div class="stat"><strong>Langsung</strong><span>Konsultasi unit</span></div>
+</div>
+<div class="hero-visual">
+<div class="visual-copy">
+<strong>Unit pilihan, info lebih jelas.</strong>
+<span>Harga • Spesifikasi • Status stok dalam satu tempat.</span>
+</div>
+</div>
+</section>
+
+<section class="section wrap" id="katalog">
+<div class="section-head">
+<div>
+<div class="kicker">PILIHAN UNIT</div>
+<h2>Katalog Mobil</h2>
+<p class="sub">Cari unit yang cocok buat kebutuhan lu.</p>
+</div>
+<span class="sub" id="resultCount">2 unit</span>
+</div>
+
+<div class="filters">
+<input id="search" class="field" type="search" placeholder="Cari nama mobil, tahun, tipe..." aria-label="Cari unit">
+<select id="category" class="field" aria-label="Filter kategori">
+<option value="all">Semua kategori</option>
+<option value="Truk">Truk</option>
+<option value="Minibus">Minibus</option>
+<option value="Mobil">Mobil lainnya</option>
+</select>
+<select id="status" class="field" aria-label="Filter status">
+<option value="all">Semua status</option>
+<option value="Tersedia">Tersedia</option>
+<option value="Terjual">Terjual</option>
+</select>
+</div>
+
+<div class="grid" id="catalog"></div>
+<p class="notice">Harga dan status dapat berubah. Konfirmasi ketersediaan, dokumen, pajak/KIR, serta kondisi kendaraan sebelum transaksi.</p>
+</section>
+
+<section class="section wrap" id="tentang">
+<div class="banner">
+<div>
+<h2>Lagi cari unit tertentu?</h2>
+<p>Kasih tahu kebutuhan dan anggaran lu. Kita bantu cek pilihan yang sesuai.</p>
+</div>
+<a class="btn" id="bannerWa" href="#">Konsultasi WhatsApp ↗</a>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="wrap footer-inner">
+<div><strong style="color:white;letter-spacing:2px">UNITRA</strong><br>Temukan Unit. Gas Transaksi.</div>
+<div>© <span id="year"></span> UNITRA · Katalog mobil bekas<br>Bandung dan sekitarnya</div>
+</div>
+</footer>
+
+<a class="wa-float" id="floatWa" href="#" aria-label="Hubungi UNITRA melalui WhatsApp">☏ WhatsApp</a>
+
+<div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+<div class="modal-box">
+<button class="close" id="closeModal" aria-label="Tutup detail">Tutup ✕</button>
+<div id="detailContent"></div>
+</div>
+</div>
+
 <script>
-/* EDIT DATA UNIT DI SINI. Harga berupa angka rupiah. Status: Tersedia atau Terjual. */
-const WHATSAPP_NUMBER = "628156148016"; // Nomor 08156148016 dalam format internasional
+/* EDIT DATA UNIT DI SINI. Harga berupa angka rupiah.
+   Status: Tersedia atau Terjual.
+   Jika ada foto, isi image dengan alamat file foto.
+   Jika image kosong, ilustrasi dummy otomatis digunakan.
+*/
+const WHATSAPP_NUMBER = "628156148016";
+
 const UNITS = [
- {id:"colt-diesel-1997",name:"Mitsubishi Colt Diesel 100 PS",year:1997,category:"Truk",fuel:"Diesel",transmission:"Manual",price:85000000,status:"Tersedia",condition:"Siap cek, nego tipis",location:"Bandung dan sekitarnya",description:"Mitsubishi Colt Diesel 100 PS tahun 1997. Hubungi UNITRA untuk konfirmasi kondisi aktual, kelengkapan dokumen, pajak/KIR, dan jadwal cek unit.",image:"assets/colt-diesel.png"},
- {id:"gran-max-minibus-2019",name:"Daihatsu Gran Max D Minibus",year:2019,category:"Minibus",fuel:"Bensin",transmission:"Manual",price:109000000,status:"Tersedia",condition:"Detail kondisi konfirmasi ke admin",location:"Bandung dan sekitarnya",description:"Daihatsu Gran Max D Minibus tahun 2019. Pastikan harga dan detail unit sudah dikonfirmasi dengan pemilik sebelum dipublikasikan sebagai penawaran final.",image:"",featured:false}
+ {
+  id:"colt-diesel-1997",
+  name:"Mitsubishi Colt Diesel 100 PS",
+  year:1997,
+  category:"Truk",
+  fuel:"Diesel",
+  transmission:"Manual",
+  price:85000000,
+  status:"Tersedia",
+  condition:"Siap cek, nego tipis",
+  location:"Bandung dan sekitarnya",
+  description:"Mitsubishi Colt Diesel 100 PS tahun 1997. Hubungi UNITRA untuk konfirmasi kondisi aktual, kelengkapan dokumen, pajak/KIR, dan jadwal cek unit.",
+  image:"assets/colt-diesel.png"
+ },
+ {
+  id:"gran-max-minibus-2019",
+  name:"Daihatsu Gran Max D Minibus",
+  year:2019,
+  category:"Minibus",
+  fuel:"Bensin",
+  transmission:"Manual",
+  price:109000000,
+  status:"Tersedia",
+  condition:"Detail kondisi konfirmasi ke admin",
+  location:"Bandung dan sekitarnya",
+  description:"Daihatsu Gran Max D Minibus tahun 2019. Pastikan harga dan detail unit sudah dikonfirmasi dengan pemilik sebelum dipublikasikan sebagai penawaran final.",
+  image:"",
+  featured:false
+ }
 ];
-const rupiah=n=>new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
-const waLink=message=>"https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message);
+
+const rupiah=n=>new Intl.NumberFormat("id-ID",{
+ style:"currency",
+ currency:"IDR",
+ maximumFractionDigits:0
+}).format(n);
+
+const waLink=message=>
+ "https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message);
+
 const generalMessage="Halo UNITRA, saya mau tanya informasi stok mobil yang tersedia.";
-["navWa","heroWa","bannerWa","floatWa"].forEach(id=>document.getElementById(id).href=waLink(generalMessage));document.getElementById("year").textContent=new Date().getFullYear();
-function imageMarkup(u,extra=""){if(u.image&&u.image.trim())return `<div class="car-image ${u.category==="Truk"?"truck":"car"} ${extra}" style="background-image:linear-gradient(#0002,#0002),url('${u.image.replace(/'/g,"%27")}');background-size:cover;background-position:center"><span class="badge ${u.status==="Terjual"?"sold":""}">${u.status.toUpperCase()}</span></div>`;return `<div class="car-image ${u.category==="Truk"?"truck":"car"} ${extra}"><span class="badge ${u.status==="Terjual"?"sold":""}">${u.status.toUpperCase()}</span><i class="wheel"></i><i class="wheel w2"></i><span class="photo-note">UNITRA • FOTO UNIT MENYUSUL</span></div>`}
-function cardMarkup(u){return `<article class="card">${imageMarkup(u)}<div class="card-body"><div class="card-type">${u.category} · ${u.year}</div><h3>${u.name}</h3><div class="meta">${u.fuel} · ${u.transmission} · ${u.location}</div><div class="price">${rupiah(u.price)} <small>nego sesuai unit</small></div><div class="card-actions"><button class="btn secondary" onclick="showDetail('${u.id}')">Detail Unit</button><a class="btn" href="${waLink("Halo UNITRA, saya tertarik dengan "+u.name+" tahun "+u.year+". Apakah unit masih tersedia?")}">Tanya Unit ↗</a></div></div></article>`}
-function render(){const q=document.getElementById("search").value.trim().toLowerCase(),cat=document.getElementById("category").value,stat=document.getElementById("status").value;const items=UNITS.filter(u=>(cat==="all"||u.category===cat)&&(stat==="all"||u.status===stat)&&(`${u.name} ${u.year} ${u.category} ${u.fuel} ${u.transmission}`.toLowerCase().includes(q)));document.getElementById("catalog").innerHTML=items.length?items.map(cardMarkup).join(""):`<div class="empty">Unit tidak ditemukan.<br>Coba kata kunci atau filter lainnya.</div>`;document.getElementById("resultCount").textContent=items.length+" unit";document.getElementById("statTotal").textContent=String(UNITS.length).padStart(2,"0")}
-function showDetail(id){const u=UNITS.find(x=>x.id===id);if(!u)return;document.getElementById("detailContent").innerHTML=`<div class="kicker">DETAIL UNIT · ${u.status.toUpperCase()}</div><h2 id="detailTitle" style="margin:8px 0">${u.name}</h2>${imageMarkup(u,"detail-art")}<div class="price">${rupiah(u.price)}</div><p style="color:#a7abb4">${u.condition}</p><div class="detail-specs"><div class="spec"><span>Tahun</span><strong>${u.year}</strong></div><div class="spec"><span>Kategori</span><strong>${u.category}</strong></div><div class="spec"><span>Bahan bakar</span><strong>${u.fuel}</strong></div><div class="spec"><span>Transmisi</span><strong>${u.transmission}</strong></div><div class="spec"><span>Status</span><strong>${u.status}</strong></div><div class="spec"><span>Lokasi</span><strong>${u.location}</strong></div></div><p>${u.description}</p><a class="btn" style="width:100%" href="${waLink("Halo UNITRA, saya mau tanya detail "+u.name+" tahun "+u.year+". Harga tertera "+rupiah(u.price)+". Mohon info ketersediaan dan jadwal cek unit.")}">Tanyakan Unit Ini via WhatsApp ↗</a><p class="notice">Sebelum transaksi, cek kondisi fisik/mesin, nomor rangka dan mesin, dokumen asli, pajak/KIR, serta pastikan pembayaran dilakukan dengan aman.</p>`;document.getElementById("detailModal").classList.add("open")}
-document.getElementById("closeModal").addEventListener("click",()=>document.getElementById("detailModal").classList.remove("open"));document.getElementById("detailModal").addEventListener("click",e=>{if(e.target.id==="detailModal")e.currentTarget.classList.remove("open")});document.addEventListener("keydown",e=>{if(e.key==="Escape")document.getElementById("detailModal").classList.remove("open")});["search","category","status"].forEach(id=>document.getElementById(id).addEventListener(id==="search"?"input":"change",render));render();
-</script></body></html>
+
+["navWa","heroWa","bannerWa","floatWa"].forEach(id=>{
+ document.getElementById(id).href=waLink(generalMessage);
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+/* FOTO ASLI: tambahkan class has-photo.
+   DUMMY: tetap memakai ilustrasi silver dan roda.
+*/
+function imageMarkup(u,extra=""){
+ const vehicleClass=u.category==="Truk"?"truck":"car";
+ const badgeClass=u.status==="Terjual"?"sold":"";
+ const badge=`<span class="badge ${badgeClass}">${u.status.toUpperCase()}</span>`;
+
+ if(u.image && u.image.trim()){
+  const safeImage=u.image.replace(/'/g,"%27");
+  return `
+   <div class="car-image has-photo ${vehicleClass} ${extra}"
+    style="background-image:linear-gradient(#0002,#0002),url('${safeImage}')">
+    ${badge}
+   </div>`;
+ }
+
+ return `
+  <div class="car-image ${vehicleClass} ${extra}">
+   ${badge}
+   <i class="wheel"></i>
+   <i class="wheel w2"></i>
+   <span class="photo-note">UNITRA • FOTO UNIT MENYUSUL</span>
+  </div>`;
+}
+
+function cardMarkup(u){
+ return `
+  <article class="card">
+   ${imageMarkup(u)}
+   <div class="card-body">
+    <div class="card-type">${u.category} · ${u.year}</div>
+    <h3>${u.name}</h3>
+    <div class="meta">${u.fuel} · ${u.transmission} · ${u.location}</div>
+    <div class="price">${rupiah(u.price)} <small>nego sesuai unit</small></div>
+    <div class="card-actions">
+     <button class="btn secondary" onclick="showDetail('${u.id}')">Detail Unit</button>
+     <a class="btn" href="${waLink("Halo UNITRA, saya tertarik dengan "+u.name+" tahun "+u.year+". Apakah unit masih tersedia?")}">Tanya Unit ↗</a>
+    </div>
+   </div>
+  </article>`;
+}
+
+function render(){
+ const q=document.getElementById("search").value.trim().toLowerCase();
+ const cat=document.getElementById("category").value;
+ const stat=document.getElementById("status").value;
+
+ const items=UNITS.filter(u=>
+  (cat==="all"||u.category===cat)&&
+  (stat==="all"||u.status===stat)&&
+  (`${u.name} ${u.year} ${u.category} ${u.fuel} ${u.transmission}`.toLowerCase().includes(q))
+ );
+
+ document.getElementById("catalog").innerHTML=items.length
+  ?items.map(cardMarkup).join("")
+  :`<div class="empty">Unit tidak ditemukan.<br>Coba kata kunci atau filter lainnya.</div>`;
+
+ document.getElementById("resultCount").textContent=items.length+" unit";
+ document.getElementById("statTotal").textContent=String(UNITS.length).padStart(2,"0");
+}
+
+function showDetail(id){
+ const u=UNITS.find(x=>x.id===id);
+ if(!u)return;
+
+ document.getElementById("detailContent").innerHTML=`
+  <div class="kicker">DETAIL UNIT · ${u.status.toUpperCase()}</div>
+  <h2 id="detailTitle" style="margin:8px 0">${u.name}</h2>
+  ${imageMarkup(u,"detail-art")}
+  <div class="price">${rupiah(u.price)}</div>
+  <p style="color:#a7abb4">${u.condition}</p>
+  <div class="detail-specs">
+   <div class="spec"><span>Tahun</span><strong>${u.year}</strong></div>
+   <div class="spec"><span>Kategori</span><strong>${u.category}</strong></div>
+   <div class="spec"><span>Bahan bakar</span><strong>${u.fuel}</strong></div>
+   <div class="spec"><span>Transmisi</span><strong>${u.transmission}</strong></div>
+   <div class="spec"><span>Status</span><strong>${u.status}</strong></div>
+   <div class="spec"><span>Lokasi</span><strong>${u.location}</strong></div>
+  </div>
+  <p>${u.description}</p>
+  <a class="btn" style="width:100%" href="${waLink("Halo UNITRA, saya mau tanya detail "+u.name+" tahun "+u.year+". Harga tertera "+rupiah(u.price)+". Mohon info ketersediaan dan jadwal cek unit.")}">Tanyakan Unit Ini via WhatsApp ↗</a>
+  <p class="notice">Sebelum transaksi, cek kondisi fisik/mesin, nomor rangka dan mesin, dokumen asli, pajak/KIR, serta pastikan pembayaran dilakukan dengan aman.</p>`;
+
+ document.getElementById("detailModal").classList.add("open");
+}
+
+document.getElementById("closeModal").addEventListener("click",()=>{
+ document.getElementById("detailModal").classList.remove("open");
+});
+
+document.getElementById("detailModal").addEventListener("click",e=>{
+ if(e.target.id==="detailModal")e.currentTarget.classList.remove("open");
+});
+
+document.addEventListener("keydown",e=>{
+ if(e.key==="Escape")document.getElementById("detailModal").classList.remove("open");
+});
+
+["search","category","status"].forEach(id=>
+ document.getElementById(id).addEventListener(id==="search"?"input":"change",render)
+);
+
+render();
+</script>
+</body>
+</html>
