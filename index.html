@@ -139,6 +139,77 @@ h1 span{color:var(--orange)}
   background:transparent;
   display:block;
 }
+
+/* UNITRA SOCIAL MEDIA */
+.unitra-social {
+  padding: 32px 0;
+  border-top: 1px solid #303238;
+  margin-top: 28px;
+}
+
+.unitra-social h3 {
+  color: #f47a20;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.unitra-social p {
+  color: #a9abb2;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.unitra-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.unitra-social-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #202126;
+  border: 1px solid #383a40;
+  border-radius: 12px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .2s ease;
+}
+
+.unitra-social-link:hover {
+  border-color: #f47a20;
+  background: #29241f;
+  transform: translateY(-2px);
+}
+
+.unitra-social-link svg {
+  width: 21px;
+  height: 21px;
+  flex-shrink: 0;
+}
+
+.unitra-social-link .social-arrow {
+  color: #f47a20;
+  margin-left: 3px;
+}
+
+@media (max-width: 480px) {
+  .unitra-social-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .unitra-social-link {
+    padding: 11px 10px;
+    gap: 8px;
+    font-size: 12px;
+  }
+}
+
 </style>
 </head>
 
@@ -394,5 +465,60 @@ document.addEventListener("keydown",e=>{
 
 render();
 </script>
+  
+<section class="unitra-social">
+  <h3>Terhubung dengan UNITRA</h3>
+  <p>Ikuti update unit mobil, stok terbaru, dan info jual beli mobil bekas.</p>
+
+  <div class="unitra-social-links">
+
+    <a class="unitra-social-link"
+       href="https://www.tiktok.com/@unitra.id"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M19.6 7.2a6.7 6.7 0 0 1-4.1-1.4v9.1a6.1 6.1 0 1 1-6.1-6.1c.4 0 .8 0 1.2.1v3.4a2.8 2.8 0 1 0 1.6 2.6V2.5h3.3a6.5 6.5 0 0 0 4.1 4.1z"/>
+      </svg>
+      <span>TikTok</span>
+      <span class="social-arrow">↗</span>
+    </a>
+
+    <a class="unitra-social-link"
+       href="https://www.facebook.com/search/top?q=unitra%20liafiz"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.4-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.5v1.9H7v3.1h2.9v8z"/>
+      </svg>
+      <span>Facebook</span>
+      <span class="social-arrow">↗</span>
+    </a>
+
+    <a class="unitra-social-link"
+       href="https://www.instagram.com/unitra.bdg/"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="2" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+      <span>Instagram</span>
+      <span class="social-arrow">↗</span>
+    </a>
+
+    <a class="unitra-social-link"
+       href="https://whatsapp.com/"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+           stroke-width="1.8" aria-hidden="true">
+        <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/>
+        <path d="M9 8.5c.4 2.2 2.2 4 4.5 4.5l1.2-1.2 2 1c-.2 1.4-1.1 2.1-2.5 2.1-3.6-.5-6.5-3.4-7-7 0-1.4.7-2.3 2.1-2.5l1 2z"/>
+      </svg>
+      <span>Saluran WA</span>
+      <span class="social-arrow">↗</span>
+    </a>
+
+  </div>
+</section>
+
 </body>
 </html>
